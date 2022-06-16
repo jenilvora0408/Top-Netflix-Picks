@@ -1,4 +1,5 @@
 import React from "react";
+import Images from "./Images";
 import './index.css'
 
 function Card(props) {
@@ -7,7 +8,7 @@ function Card(props) {
       <>
         <div className="cards">
           <div className="card">
-            <img src={props.imgsrc} alt="myPic" className="card__img" />
+            <Images imgsrc={props.imgsrc} />
             <div className="card__info">
               <span className="card__category"> {props.title} </span>
               <h3 className="card__title"> {props.sname} </h3>
